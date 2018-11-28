@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/player1Frag"
+        android:name="sachin.sdmp.com.assignment4.Player1"
+        android:layout_width="193dp"
+        android:layout_height="402dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        tools:layout="@layout/fragment_player" />
+
+    <fragment
+        android:id="@+id/player2Frag"
+        android:name="sachin.sdmp.com.assignment4.Player2"
+        android:layout_width="193dp"
+        android:layout_height="402dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:layout="@layout/fragment_player" />
+
+    <TextView
+        android:id="@+id/player1TextView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="Player1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/player2TextView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/player1TextView"
+        android:text="Player2"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Start Game" />
+
+</RelativeLayout>
